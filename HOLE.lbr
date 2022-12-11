@@ -76,6 +76,9 @@
 <package name="1,65">
 <pad name="P$1" x="0" y="0" drill="1.65" diameter="3.143"/>
 </package>
+<package name="2,0">
+<pad name="P$1" x="0" y="0" drill="2" diameter="3.81"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MOUNT-PAD">
@@ -95,7 +98,15 @@
 <gate name="G$1" symbol="MOUNT-PAD" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="1,65">
+<device name="1,65" package="1,65">
+<connects>
+<connect gate="G$1" pin="MOUNT" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="2,0" package="2,0">
 <connects>
 <connect gate="G$1" pin="MOUNT" pad="P$1"/>
 </connects>
